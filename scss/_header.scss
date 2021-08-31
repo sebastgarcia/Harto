@@ -1,0 +1,113 @@
+header {
+
+    padding: 0;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: $GrisOscuro;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: $GrisOscuro;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    
+    
+    .logo {
+    padding-left: 2rem; 
+    width: 100px; 
+    position:relative;
+    }
+
+    .logo:hover {
+    background-color: transparent;
+    }
+
+    .nav {
+        display: flex;
+        padding: 0;
+        color: $Blanco;
+        font-size: 1.25rem;
+        
+        
+       
+        li {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            padding-right: 2rem;   
+        }
+    
+        ul {
+            position: absolute;
+            display: none;
+            top: 3.5rem;
+            text-align: start;
+            padding: 1.5rem 0;
+            box-shadow: 2rem 2rem;
+            background-color: $GrisClaro;
+    
+            li {
+                display: block;
+                padding: 0;
+    
+                a {
+                    display: block;
+                    padding: 0.5rem 2rem 0rem 0.5rem;
+                    letter-spacing: 0.25rem;
+                    border-bottom-width: 1px;
+                    border-bottom-style: solid;
+                    border-bottom-color: $GrisOscuro;
+                    margin-bottom: 0.75rem;
+                }
+            }
+        
+        }
+
+               
+        &-item :hover{
+            color: $GrisClaro !important;
+        }
+    
+        &-link {
+            padding: 0.5rem;
+        }
+    
+        a:hover {
+        
+            background-color: $GrisOscuro;
+            color: $GrisClaro;}
+    
+    
+    }
+    
+    
+    .dropdown-menu {
+       font-size: 1.25rem;
+       border: 0;
+       box-shadow: 0.25rem 0.25rem !important;
+    }
+    
+    .dropdown-menu :hover{
+    
+        background-color: $GrisOscuro;
+        box-shadow: 0.25rem 0.25rem !important;
+    }
+    
+    
+    .dropdown-item :hover{
+    
+        background-color: $GrisOscuro;
+        box-shadow: 0.25rem 0.25rem !important;
+    }
+
+
+
+
+
+}
+
+
+

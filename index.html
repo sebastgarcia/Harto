@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--tipografias-->
+    <!--Staatliches -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <!--Staatliches-->
+    <!--MONTSERRAT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!--MONTSERRAT-->
+
+    <!--Palanquin-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@100;300;400;500;600;700&family=Staatliches&display=swap" rel="stylesheet">
+    <!--Palanquin-->
+    <!--fin tipografia-->
+    
+    <!--BOOSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!--fin BOOSTRAP-->
+
+
+    <!--HOJAS DE ESTILO-->
+    <link rel="stylesheet" href="css/index.css">
+    <!--fin HOJAS DE ESTILO-->
+
+    <!--ANIMACION-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--fin ANIMACION-->
+
+    <title>Doceavo Desafio</title>
+</head>
+
+<body class="container-fluid m-0 p-0">
+    <header>     
+
+        <nav class="navbar navbar-expand-lg navbar-light" >
+            <div class="container-fluid">
+                <a href="index.html" class="logo"><img src="imagenes/logoHarto.svg"></a>
+              <button class="navbar-toggler" style="border-color: transparent;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="width: 2.5em; height: 2.5em;"></span>
+              </button>
+              
+              <div class="collapse navbar-collapse" style="justify-content: flex-end; color: black;" id="navbarNavDropdown">
+                <ul class="nav mt-lg-0 mt-5" >
+                    <div class="row m-md-auto">
+                    <li class="col-12 col-md-3"><a href="servicios.html">Servicios</a></li>
+                    <li class="col-12 col-md-3 nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="color: black;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Trabajos
+                          </a>
+                        <ul class="dropdown-menu"  aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="trabajos.html">Trabajo I</a></li>
+                            <li><a class="dropdown-item" href="trabajos.html">Trabajo II</a></li>
+                            <li><a class="dropdown-item" href="trabajos.html">Trabajo III</a></li>
+                          </ul>                    
+                    </li>
+                    <li class="col-12 col-md-3" ><a href="nosotros.html">Nosotros</a></li>
+                    <li class="col-12 col-md-3" ><a href="contacto.html">Contacto</a></li>
+                </div>
+                </ul>
+              </div>
+            </div>
+          </nav>
+     
+
+
+    </header>
+    
+    <section class="marca animate__animated animate__fadeIn container-fluid">
+        <h1 class="marca__titulo">HARTÓ</h1>
+        <p class="marca__bajada">Tenemos algo que aportar a tu marca.</p>  
+    </section>
+
+    <section class="intro container-fluid">
+        <p class="intro__texto">Creamos sitios únicos </br> para marcas únicas.</p>
+    </section>
+    
+
+
+    <section class="container-fluid serv row my-5"> 
+            
+        <div class="serv__imagen col-md-6 col-12 py-5">
+                <img src="imagenes/bannerServicios.jpg">
+        </div>
+
+    
+
+        <div class="serv__texto col-md-6 col-12 mb-md-0 mb-5">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, optio?</p>
+
+        </div>
+    </section>
+
+
+
+    <section class="trab container-fluid">
+
+        <ul class="trab__lista">
+            <a class="trab__lista__item" href="#trabajo1">
+                <li>TRABAJO 1</li> 
+            </a>
+
+            <a class="trab__lista__item" href="#trabajo11">
+                <li>TRABAJO 11</li>
+            </a>
+            
+
+            <a class="trab__lista__item" href="#trabajo111">
+                <li>TRABAJO 111</li>
+            </a>
+
+            <a class="trab__lista__item" style="font-size: 3rem;" href="trabajos.html">
+                <li>VER TODOS</li>
+            </a>
+            
+        </ul>       
+
+    </section>
+    
+
+    <section class="cont container-fluid bg-claro">
+        <p>Creemos juntxs </br> <a class="cont__enlace" href="contacto.html">ESCRIBINOS</a></p>
+ 
+    </section>
+
+    <footer class="container-fluid">
+        <nav class="menuFooter">
+            <ul class="menuFooter__lista">
+                <li class="menuFooter__lista__item"><a href="servicios.html">Servicios</a></li>
+                <li class="menuFooter__lista__item"><a href="trabajos.html">Trabajos</a></li>
+                <li class="menuFooter__lista__item"><a href="nosotros.html">Nosotros</a></li>
+                <li class="menuFooter__lista__item"><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>

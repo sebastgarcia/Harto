@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%
+}
+
+body {
+    font-family: 'Palanquin', 'Montserrat', Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: $Negro;
+    margin: 0;
+    line-height: 1.6;
+    background-color: $GrisClaro;
+    letter-spacing: 0.5rem;
+}
+
+section {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: center;
+}
+
+
+a {
+    color: $Negro;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+.tituloSeccion {
+    padding-bottom: 5rem;
+
+
+    &__titulo {
+        font-family: $Titulos;
+        font-size: $TituloSeccion;
+        font-weight: $TituloSeccionPeso;
+        margin-top: $TituloMargen;
+    }
+
+    &__bajada {
+        font-size: $TituloBajada;
+        font-weight: $TituloBajadaPeso;
+        letter-spacing: $TituloBajadaEspaciado;
+        padding: $TituloBajadaContenedor;
+    
+    }
+}
+
+.cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 0 0;
+    font-size: 2rem;
+    font-weight: 200;
+    align-items: center;
+    text-align: center;
+    padding: 5rem 0;
+    background-color: $GrisOscuro;
+    color: $Blanco;
+
+    &__enlace {
+        font-family: 'Staatliches', 'Montserrat', 'Roboto', Helvetica, Arial, sans-serif;
+        color: #fff;
+    }
+
+    &__enlace:hover {
+       
+        color: $GrisClaro;   
+    }     
+}
+
+
+
+
+@each $key, $color in $colors {
+    .bg-#{$key} {
+        background-color: $color;
+        color: $Negro;
+
+        a{
+            color: $Negro;
+        }
+
+        a:hover {
+            background-color: $GrisOscuro;
+            color: $color;
+        }
+
+
+    }
+    
+}
+
+
+@media only screen and (max-width: 768px) {
+    .tituloSeccion {  
+        padding-bottom: 2rem;
+    
+        &__titulo {
+            font-size: $TituloSeccion - 2rem;
+        }
+    
+        &__bajada {
+            font-size: $TituloBajada - 0.25rem;
+            padding: 0;
+
+        }
+    }
+
+    .cont {
+        font-size: 3rem;
+        padding: 3rem 0;
+        
+    }
+ 
+        
+    .nav {
+        padding: 0 2rem 0 2rem;
+    }  
+
+}
+
+@media only screen and (max-width: 375px) {
+    .tituloSeccion {  
+        padding-bottom: 2rem;
+    
+        &__titulo {
+            font-size: $TituloSeccion - 4rem;
+        }
+    
+        &__bajada {
+            font-size: $TituloBajada - 0.25rem;
+            padding: 0;
+
+        }
+    }
+
+     
+
+}

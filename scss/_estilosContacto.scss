@@ -1,0 +1,201 @@
+
+input{
+    border: 0;
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: 000;
+    padding-left: 5px;
+    margin-bottom: 15px;
+    background-color: $GrisClaro;
+    max-width: 60%;
+}
+
+label {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+
+.contenedorFormulario {
+    text-align: left;
+    padding: 2rem 3rem 2rem 3rem !important;
+    
+    .formularioContacto{
+        padding: 1rem 0;
+        text-align: left;
+    
+        &__titulo{
+            font-size: 3rem;
+        }
+
+        &__datosPersonales {
+            padding: 1rem 0;
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+
+            &__campo{
+                padding-right: 1rem;
+            }
+
+
+        }
+    
+
+        &__presenciaRRSS{
+            padding: 1rem 0;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+
+            &__titulo{
+                display: block;
+
+                h4 {
+                    font-size: 1.5rem;
+                }
+                
+            }
+
+            &__listadoRRSS{
+                display: flex;
+                flex-wrap: wrap;
+
+                &__red{
+                    padding-right: 2rem;
+
+                }              
+
+            }
+            
+        }
+
+        &newsletter {
+            padding: 1rem 0;
+            &__titulo{
+                font-size: 1.5rem;
+                }
+            select {
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            
+            }
+        }
+        
+        &__comentario {
+            display: flex;
+            flex-direction: column;
+            align-content: start;
+
+           
+
+            &__mensaje {
+            padding-left: 8px;
+            width: 70%;
+            max-width: 700px;
+            height: 100px;
+            margin-bottom: 0.75rem;
+            background-color: $GrisClaro;
+   
+            }
+        }
+
+        &__boton {
+        font-weight: 600;
+        padding: 0.5rem;
+        }
+
+
+        &__boton:hover {
+            background-color: $GrisOscuro;
+            color: $GrisClaro;
+        }
+
+        
+
+    }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .contenedorFormulario {
+        
+        .formularioContacto{          
+            
+            &__comentario {  
+        
+                &__mensaje {
+                width: 100%;
+               
+       
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+
+    .contenedorFormulario {
+        text-align: left;
+        padding: 2rem 3rem 2rem 3rem !important;
+        
+        .formularioContacto{
+            
+        
+    
+            &__presenciaRRSS{
+
+             
+                
+    
+                &__listadoRRSS{
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+    
+    
+                    &__ig{
+                        display: inline-block;
+        
+        
+                    }
+        
+                    &__fb{
+                        display: inline-block;
+        
+        
+                    }
+        
+                    &__tw{
+                        display: inline-block;
+        
+        
+                    }
+        
+                    &__otra{
+                        display: inline-block;
+        
+        
+                    }
+    
+                }
+                
+            }
+        }
+    }
+
+
+    
+}
+
+
+
+
+

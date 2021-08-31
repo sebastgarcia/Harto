@@ -1,0 +1,32 @@
+/*COLORES*/
+$GrisOscuro: #2D2C2C;
+$GrisClaro: #c7c7c7;
+$Blanco: #fff;
+$Negro: #000;
+
+/*FONDOS*/
+$colors: (
+    rojo: rgb(233, 56, 56),
+    claro: $GrisClaro
+
+);
+
+
+/*TIPOGRAFIA*/
+$Titulos: 'Staatliches', 'Montserrat', 'Roboto', Helvetica, Arial, sans-serif;
+
+/*TEXTOS*/
+$TituloSeccion: 10rem;
+$TituloBajada: 1.5rem;
+$SubtitulosSeccion: 3rem;
+
+$TituloSeccionPeso: 400;
+$TituloBajadaPeso: 300;
+$SubtitulosSeccionPeso: 700;
+
+
+$TituloBajadaEspaciado: 0.25rem;
+
+$TituloMargen: 2rem;
+$TituloBajadaContenedor: 0 10%;
+

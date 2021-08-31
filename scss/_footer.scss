@@ -1,0 +1,48 @@
+footer {
+
+    .menuFooter {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0.5rem;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: $GrisOscuro;
+        border-top-width: 1px;
+        border-top-style: solid;
+        border-top-color: $GrisOscuro;
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    
+
+        &__lista{
+            list-style: none;
+            display: flex;
+
+            &__item {
+                font-size: 1.25rem;
+            }
+        
+
+            &__item a:hover {
+                background-color:$GrisOscuro;
+                color: $GrisClaro;
+            }
+        }
+    }    
+}
+
+@media only screen and (max-width: 425px) {
+    
+    .menuFooter{
+
+        &__lista{
+            flex-direction: column;
+        }
+    }
+}
+
+

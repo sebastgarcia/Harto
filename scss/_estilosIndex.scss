@@ -1,0 +1,261 @@
+
+.marca{
+
+    margin: auto 0;
+
+    &__titulo {
+        color: $GrisOscuro;
+        margin: 0;
+        margin-top: 10rem;
+        font-size: 20rem;
+        font-weight: 400;
+        font-family: 'Staatliches', 'Montserrat', 'Roboto', Helvetica, Arial, sans-serif;
+        line-height: 15rem;
+        text-align: center;
+    }
+    
+    &__bajada {
+        color: $Negro;
+        margin-top: 0.5rem;
+        font-weight: 400;
+        font-family: 'Palanquin', 'Montserrat', 'Roboto', Helvetica, Arial, sans-serif;
+        letter-spacing: 0.75rem;
+        text-align: center;
+        
+    }
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    /*transform: scale(0.25);*/
+    
+
+    &__texto {
+        margin: 0;
+        padding: 15rem 30%;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 100;
+        letter-spacing: 1rem; 
+        
+    }
+}
+
+/*
+.intro:hover {
+    transform: scale(1.25);
+    padding:0;
+    margin: 0;
+
+}
+*/
+.serv {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 0;
+
+    &__imagen {
+        border-right: solid;
+        border-right-color: $Negro;
+        border-right-width: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+
+        img {
+            width: 80%;
+    
+        }
+    }
+    
+    &__texto {
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    
+        p {
+            padding: 0rem 10%;    
+        
+        } 
+    } 
+}
+
+.trab {
+    background-color: $GrisOscuro ;
+    color: $GrisClaro;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__lista {
+        display: flex-col;
+        color: $GrisClaro;
+        text-decoration: none;
+        padding: 0;
+        margin:0;
+        list-style: none; 
+
+        &__item {
+            width: 80%;
+            display: block;
+            color: $GrisClaro;
+            text-decoration: none;
+            border: solid;
+            border-color: #fff;
+            border-width: 2px;
+            border-top-width: 1px;
+            border-bottom-width: 1px;
+            font-size: 8rem;
+            font-weight: 300;
+            font-family: 'Staatliches', 'Montserrat', 'Roboto', Helvetica, Arial, sans-serif;
+            margin: auto;
+            letter-spacing: 0.75rem;
+            text-align: center;
+        }
+    
+        &__item:hover {
+            background-color: $GrisClaro;
+            color: $GrisOscuro;   
+        }
+    }
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 769px){
+
+    .intro {
+    
+        transform: scale(0.25);
+        
+    }
+    
+    
+    .intro:hover {
+        transform: scale(1.25);
+        padding:0;
+        margin: 0;
+    
+    }
+    
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .marca{
+        
+        &__titulo{
+        font-size: 15rem;
+        }
+    
+        &__bajada {
+        font-size: 1rem;
+        margin-top: 0.25rem;
+        letter-spacing: 0.5rem;
+        }    
+    }
+
+
+    .intro {
+
+        &__texto {
+        padding: 10rem 10%;
+        font-size: 2rem;
+        transform: scale(1);
+        }
+    }
+
+    .serv {  
+        &__texto{
+            text-align: center;
+            margin: 0;
+        }
+
+        &__imagen {
+        border: none;
+        }  
+    }
+
+    .trab {
+        &__lista {
+            
+    
+            &__item {
+
+                width: 90%;
+                display: block;
+                color: $GrisClaro;
+                text-decoration: none;
+                border: solid;
+                border-color: $Blanco;
+                border-width: 2px;
+                border-top-width: 1px;
+                border-bottom-width: 1px;
+                font-size: 5rem;
+                font-weight: 300;
+                font-family: 'Staatliches', 'Montserrat', 'Roboto', Helvetica, Arial, sans-serif;
+                margin: auto;
+                letter-spacing: 0.75rem;
+            }
+        }
+    }
+
+  
+}
+
+@media only screen and (max-width: 425px){
+
+    .marca{
+        
+        &__titulo{
+        font-size: 13rem;
+        }
+      
+    }
+
+    .trab {
+        &__lista {
+            
+            &__item {
+
+                font-size: 4rem;
+                font-weight: 200;
+                letter-spacing: 0.5rem;
+
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 375px){
+
+    .marca{
+        
+        &__titulo{
+        font-size: 10rem;
+        }
+
+        &__bajada {
+            font-size: 1rem;
+            margin-top: 0.25rem;
+            letter-spacing: 0.25rem;
+            }  
+      
+    }
+}

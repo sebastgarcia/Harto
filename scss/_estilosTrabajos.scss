@@ -1,0 +1,41 @@
+.trabajosPortada {
+
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    padding: 5rem 0 0 20px;
+
+    &__imagen {
+        display: flex;
+        justify-content: left;
+        align-items: left; 
+        flex-wrap: wrap;
+
+        img {
+            max-width: 300px;
+            margin: 1rem 1rem 0 0;
+            height: 200px;
+            width: 300px;
+    
+        }
+    }
+    
+    &__titulo {
+        font-size: $SubtitulosSeccion;
+        font-weight: $SubtitulosSeccionPeso;
+    } 
+}
+
+@each $portfolio in carpeta,logo,mockup,papeleria,presentacion {
+    .disegnoarq-#{$portfolio} {
+        background-image: url("../imagenes/disegnoarq-#{$portfolio}.jpg");
+    } 
+    
+}
+
+@each $portfolio in diferencias,mobile,presentacion {
+    .reciclar-#{$portfolio} {
+        background-image: url("../imagenes/reciclar-#{$portfolio}.jpg");
+    } 
+    
+}
