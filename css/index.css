@@ -362,14 +362,15 @@ footer .menuFooter {
   margin: 0;
   padding: 5rem 0 0 0; }
   .serviciosPortada__imagen {
-    /*border-right: solid;
-        border-right-color: $Negro;
-        border-right-width: 1px;*/
     display: flex;
     justify-content: center;
     align-items: center; }
-    .serviciosPortada__imagen img {
-      width: 80%; }
+    .serviciosPortada__imagen__contenedor {
+      width: 80%;
+      max-height: 400px; }
+      .serviciosPortada__imagen__contenedor img {
+        max-height: 400px;
+        max-width: 100%; }
   .serviciosPortada__descripcion {
     display: flex;
     flex-direction: column;
