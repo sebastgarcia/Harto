@@ -98,7 +98,8 @@
     justify-content: center;
 
     &__lista {
-        display: flex-col;
+        display: flex;
+        flex-direction: column;
         color: $GrisClaro;
         text-decoration: none;
         padding: 0;

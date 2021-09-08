@@ -11,102 +11,68 @@ header {
     margin-top: 2rem;
     margin-bottom: 2rem;
 
-    
-    
-    .logo {
-    padding-left: 2rem; 
-    width: 100px; 
-    position:relative;
-    }
-
-    .logo:hover {
-    background-color: transparent;
-    }
-
-    .nav {
+    nav {
         display: flex;
-        padding: 0;
-        color: $Blanco;
-        font-size: 1.25rem;
-        
-        
-       
-        li {
-            position: relative;
+        justify-content: space-between;
+        align-content: space-between;
+
+        .logo {
             display: flex;
-            justify-content: space-between;
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
-            padding-right: 2rem;   
-        }
-    
-        ul {
-            position: absolute;
-            display: none;
-            top: 3.5rem;
-            text-align: start;
-            padding: 1.5rem 0;
-            box-shadow: 2rem 2rem;
-            background-color: $GrisClaro;
-    
-            li {
-                display: block;
-                padding: 0;
-    
-                a {
-                    display: block;
-                    padding: 0.5rem 2rem 0rem 0.5rem;
-                    letter-spacing: 0.25rem;
-                    border-bottom-width: 1px;
-                    border-bottom-style: solid;
-                    border-bottom-color: $GrisOscuro;
-                    margin-bottom: 0.75rem;
-                }
+            padding-left: 2rem; 
+            position:relative;
+            font-family: $Titulos;
+            font-size: 3rem;
+            letter-spacing: 0;
+            font-weight: 500;
+
             }
         
-        }
+            .logo:hover {
+            background-color: transparent;
+            
+            }
 
-               
-        &-item :hover{
-            color: $GrisClaro !important;
+        .menu {
+            display: flex;
+            font-family: $Titulos;
+            font-size: 3rem;
+            font-weight: 500;
+            padding-right: 2rem;
+
         }
-    
-        &-link {
-            padding: 0.5rem;
-        }
-    
-        a:hover {
         
-            background-color: $GrisOscuro;
-            color: $GrisClaro;}
-    
-    
+
+        .modal-dialog{
+            margin: 0;
+            width: 100% !important;
+            max-width: 100%;
+
+        }
+
+        .modal-content {
+            background-color: crimson;
+            width: 100% !important;
+            height: 100vh;
+            border: 0;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 2rem;
+        }
+
+        .cerrarMenu {
+            text-align: end;
+            display: flex;
+            font-family: $Titulos;
+            font-size: 3rem;
+            color: $Blanco;
+            
+
+        }
+
     }
-    
-    
-    .dropdown-menu {
-       font-size: 1.25rem;
-       border: 0;
-       box-shadow: 0.25rem 0.25rem !important;
-    }
-    
-    .dropdown-menu :hover{
-    
-        background-color: $GrisOscuro;
-        box-shadow: 0.25rem 0.25rem !important;
-    }
-    
-    
-    .dropdown-item :hover{
-    
-        background-color: $GrisOscuro;
-        box-shadow: 0.25rem 0.25rem !important;
-    }
-
-
-
-
-
 }
 
 

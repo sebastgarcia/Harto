@@ -31,6 +31,9 @@ a {
   display: inline-block;
   padding: 0.5rem; }
 
+a:hover {
+  color: #000; }
+
 .tituloSeccion {
   padding-bottom: 5rem; }
   .tituloSeccion__titulo {
@@ -115,60 +118,45 @@ header {
   width: 100%;
   margin-top: 2rem;
   margin-bottom: 2rem; }
-  header .logo {
-    padding-left: 2rem;
-    width: 100px;
-    position: relative; }
-  header .logo:hover {
-    background-color: transparent; }
-  header .nav {
+  header nav {
     display: flex;
-    padding: 0;
-    color: #fff;
-    font-size: 1.25rem; }
-    header .nav li {
-      position: relative;
+    justify-content: space-between;
+    align-content: space-between; }
+    header nav .logo {
       display: flex;
-      justify-content: space-between;
-      padding-top: 0.5rem;
-      padding-bottom: 0.5rem;
+      padding-left: 2rem;
+      position: relative;
+      font-family: "Staatliches", "Montserrat", "Roboto", Helvetica, Arial, sans-serif;
+      font-size: 3rem;
+      letter-spacing: 0;
+      font-weight: 500; }
+    header nav .logo:hover {
+      background-color: transparent; }
+    header nav .menu {
+      display: flex;
+      font-family: "Staatliches", "Montserrat", "Roboto", Helvetica, Arial, sans-serif;
+      font-size: 3rem;
+      font-weight: 500;
       padding-right: 2rem; }
-    header .nav ul {
-      position: absolute;
-      display: none;
-      top: 3.5rem;
-      text-align: start;
-      padding: 1.5rem 0;
-      box-shadow: 2rem 2rem;
-      background-color: #c7c7c7; }
-      header .nav ul li {
-        display: block;
-        padding: 0; }
-        header .nav ul li a {
-          display: block;
-          padding: 0.5rem 2rem 0rem 0.5rem;
-          letter-spacing: 0.25rem;
-          border-bottom-width: 1px;
-          border-bottom-style: solid;
-          border-bottom-color: #2D2C2C;
-          margin-bottom: 0.75rem; }
-    header .nav-item :hover {
-      color: #c7c7c7 !important; }
-    header .nav-link {
-      padding: 0.5rem; }
-    header .nav a:hover {
-      background-color: #2D2C2C;
-      color: #c7c7c7; }
-  header .dropdown-menu {
-    font-size: 1.25rem;
-    border: 0;
-    box-shadow: 0.25rem 0.25rem !important; }
-  header .dropdown-menu :hover {
-    background-color: #2D2C2C;
-    box-shadow: 0.25rem 0.25rem !important; }
-  header .dropdown-item :hover {
-    background-color: #2D2C2C;
-    box-shadow: 0.25rem 0.25rem !important; }
+    header nav .modal-dialog {
+      margin: 0;
+      width: 100% !important;
+      max-width: 100%; }
+    header nav .modal-content {
+      background-color: crimson;
+      width: 100% !important;
+      height: 100vh;
+      border: 0; }
+    header nav .modal-header {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 2rem; }
+    header nav .cerrarMenu {
+      text-align: end;
+      display: flex;
+      font-family: "Staatliches", "Montserrat", "Roboto", Helvetica, Arial, sans-serif;
+      font-size: 3rem;
+      color: #fff; }
 
 footer .menuFooter {
   position: relative;
@@ -273,7 +261,8 @@ footer .menuFooter {
   flex-direction: column;
   justify-content: center; }
   .trab__lista {
-    display: flex-col;
+    display: flex;
+    flex-direction: column;
     color: #c7c7c7;
     text-decoration: none;
     padding: 0;
