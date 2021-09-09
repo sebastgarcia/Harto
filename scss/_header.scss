@@ -22,15 +22,14 @@ header {
             position:relative;
             font-family: $Titulos;
             font-size: 3rem;
-            letter-spacing: 0;
             font-weight: 500;
 
-            }
+        }
         
-            .logo:hover {
+        .logo:hover {
             background-color: transparent;
             
-            }
+        }
 
         .menu {
             display: flex;
@@ -44,14 +43,15 @@ header {
 
         .modal-dialog{
             margin: 0;
-            width: 100% !important;
+            width: 100%;
             max-width: 100%;
+            position: fixed;
 
         }
 
         .modal-content {
-            background-color: crimson;
-            width: 100% !important;
+            background-color: $Negro;
+            width: 100% ;
             height: 100vh;
             border: 0;
         }
@@ -67,9 +67,35 @@ header {
             display: flex;
             font-family: $Titulos;
             font-size: 3rem;
-            color: $Blanco;
+            color: $GrisClaro;
             
 
+        }
+
+        .cerrarMenu:hover {
+            color: $Blanco
+        }
+
+        .listaMenu {
+            display: flex;
+            flex-direction: column;
+
+            &__items{
+                font-family: $Titulos;
+                font-size: $TituloSeccion - 1rem;
+                padding: 0;
+                line-height: 12rem;
+
+                a{
+                    color: $Blanco;
+
+                }
+
+                a:hover {
+                    color: $GrisClaro;
+                }
+
+            }
         }
 
     }

@@ -18,7 +18,7 @@ body {
   margin: 0;
   line-height: 1.6;
   background-color: #c7c7c7;
-  letter-spacing: 0.5rem; }
+  letter-spacing: 0.25rem; }
 
 section {
   margin-left: 2rem;
@@ -128,7 +128,6 @@ header {
       position: relative;
       font-family: "Staatliches", "Montserrat", "Roboto", Helvetica, Arial, sans-serif;
       font-size: 3rem;
-      letter-spacing: 0;
       font-weight: 500; }
     header nav .logo:hover {
       background-color: transparent; }
@@ -140,11 +139,12 @@ header {
       padding-right: 2rem; }
     header nav .modal-dialog {
       margin: 0;
-      width: 100% !important;
-      max-width: 100%; }
+      width: 100%;
+      max-width: 100%;
+      position: fixed; }
     header nav .modal-content {
-      background-color: crimson;
-      width: 100% !important;
+      background-color: #000;
+      width: 100%;
       height: 100vh;
       border: 0; }
     header nav .modal-header {
@@ -156,7 +156,21 @@ header {
       display: flex;
       font-family: "Staatliches", "Montserrat", "Roboto", Helvetica, Arial, sans-serif;
       font-size: 3rem;
+      color: #c7c7c7; }
+    header nav .cerrarMenu:hover {
       color: #fff; }
+    header nav .listaMenu {
+      display: flex;
+      flex-direction: column; }
+      header nav .listaMenu__items {
+        font-family: "Staatliches", "Montserrat", "Roboto", Helvetica, Arial, sans-serif;
+        font-size: 9rem;
+        padding: 0;
+        line-height: 12rem; }
+        header nav .listaMenu__items a {
+          color: #fff; }
+        header nav .listaMenu__items a:hover {
+          color: #c7c7c7; }
 
 footer .menuFooter {
   position: relative;
@@ -210,8 +224,7 @@ footer .menuFooter {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0;
-  /*transform: scale(0.25);*/ }
+  margin: 0; }
   .intro__texto {
     margin: 0;
     padding: 15rem 30%;
@@ -220,14 +233,6 @@ footer .menuFooter {
     font-weight: 100;
     letter-spacing: 1rem; }
 
-/*
-.intro:hover {
-    transform: scale(1.25);
-    padding:0;
-    margin: 0;
-
-}
-*/
 .serv {
   display: flex;
   justify-content: center;
