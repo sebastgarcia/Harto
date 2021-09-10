@@ -1,46 +1,43 @@
 
-@each $portada in disegnoarq, reciclar {
-    .trabajosPortada-#{$portada} {
-        background-image: url("../imagenes/portada-#{$portada}.jpg");
-        background-size: cover;
-    display: grid;
-    text-align: left;
-    flex-direction: column;
-    border: solid;
-    border-width: 1px;
-    background-color: crimson;
+.proyectos {
     height: 70vh;
-    padding: 0;
+
+
+}
+
+@each $portada in disegnoarq, reciclar {
+    .portada-#{$portada} {
+        background-color: crimson;
+        background-size: cover;
+        display: grid;
+        text-align: left;
+        flex-direction: column;
+        padding: 0;
+        height: 100%;
+        transition: all 1s;
 
 
     
-    
-/*
-    &__imagen {
-        display: flex;
-        justify-content: left;
-        align-items: left; 
-        flex-wrap: wrap;
 
-        img {
-            max-width: 300px;
-            margin: 1rem 1rem 0 0;
-            height: 200px;
-            width: 300px;
-    
-        }
+        &__titulo {
+            font-size: $SubtitulosSeccion;
+            font-weight: $SubtitulosSeccionPeso;
+            align-self: flex-end;
+            padding-left: 3rem;
+            font-family: $Titulos;
+            color: $Blanco;
+            line-height: 8rem;
+        } 
+
     }
-    */
-    &__titulo {
-        font-size: $SubtitulosSeccion;
-        font-weight: $SubtitulosSeccionPeso;
-        align-self: flex-end;
-        justify-self: flex-start;
-        padding-left: 3rem;
-        font-family: $Titulos;
-    } 
-
-}
 }
 
-
+@each $portada in disegnoarq, reciclar {
+    .portada-#{$portada}:hover {
+        background-image: url("../imagenes/portada-#{$portada}.jpg");
+        transform: scale(0.9);
+        background-color:transparent;
+        opacity: 0.9;
+        
+    }
+}
