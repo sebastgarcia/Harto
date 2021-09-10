@@ -1,10 +1,21 @@
-.trabajosPortada {
 
-    display: flex;
+@each $portada in disegnoarq, reciclar {
+    .trabajosPortada-#{$portada} {
+        background-image: url("../imagenes/portada-#{$portada}.jpg");
+        background-size: cover;
+    display: grid;
     text-align: left;
     flex-direction: column;
-    padding: 5rem 0 0 20px;
+    border: solid;
+    border-width: 1px;
+    background-color: crimson;
+    height: 70vh;
+    padding: 0;
 
+
+    
+    
+/*
     &__imagen {
         display: flex;
         justify-content: left;
@@ -19,23 +30,17 @@
     
         }
     }
-    
+    */
     &__titulo {
         font-size: $SubtitulosSeccion;
         font-weight: $SubtitulosSeccionPeso;
+        align-self: flex-end;
+        justify-self: flex-start;
+        padding-left: 3rem;
+        font-family: $Titulos;
     } 
+
+}
 }
 
-@each $portfolio in carpeta,logo,mockup,papeleria,presentacion {
-    .disegnoarq-#{$portfolio} {
-        background-image: url("../imagenes/disegnoarq-#{$portfolio}.jpg");
-    } 
-    
-}
 
-@each $portfolio in diferencias,mobile,presentacion {
-    .reciclar-#{$portfolio} {
-        background-image: url("../imagenes/reciclar-#{$portfolio}.jpg");
-    } 
-    
-}

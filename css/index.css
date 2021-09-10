@@ -403,48 +403,75 @@ footer .menuFooter {
     border-left-width: 0px;
     padding-bottom: 3rem; } }
 
-.trabajosPortada {
-  display: flex;
+.trabajosPortada-disegnoarq {
+  background-image: url("../imagenes/portada-disegnoarq.jpg");
+  background-size: cover;
+  display: grid;
   text-align: left;
   flex-direction: column;
-  padding: 5rem 0 0 20px; }
-  .trabajosPortada__imagen {
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    flex-wrap: wrap; }
-    .trabajosPortada__imagen img {
-      max-width: 300px;
-      margin: 1rem 1rem 0 0;
-      height: 200px;
-      width: 300px; }
-  .trabajosPortada__titulo {
+  border: solid;
+  border-width: 1px;
+  background-color: crimson;
+  height: 70vh;
+  padding: 0;
+  /*
+    &__imagen {
+        display: flex;
+        justify-content: left;
+        align-items: left; 
+        flex-wrap: wrap;
+
+        img {
+            max-width: 300px;
+            margin: 1rem 1rem 0 0;
+            height: 200px;
+            width: 300px;
+    
+        }
+    }
+    */ }
+  .trabajosPortada-disegnoarq__titulo {
     font-size: 3rem;
-    font-weight: 700; }
+    font-weight: 700;
+    align-self: flex-end;
+    justify-self: flex-start;
+    padding-left: 3rem;
+    font-family: "Staatliches", "Montserrat", "Roboto", Helvetica, Arial, sans-serif; }
 
-.disegnoarq-carpeta {
-  background-image: url("../imagenes/disegnoarq-carpeta.jpg"); }
+.trabajosPortada-reciclar {
+  background-image: url("../imagenes/portada-reciclar.jpg");
+  background-size: cover;
+  display: grid;
+  text-align: left;
+  flex-direction: column;
+  border: solid;
+  border-width: 1px;
+  background-color: crimson;
+  height: 70vh;
+  padding: 0;
+  /*
+    &__imagen {
+        display: flex;
+        justify-content: left;
+        align-items: left; 
+        flex-wrap: wrap;
 
-.disegnoarq-logo {
-  background-image: url("../imagenes/disegnoarq-logo.jpg"); }
-
-.disegnoarq-mockup {
-  background-image: url("../imagenes/disegnoarq-mockup.jpg"); }
-
-.disegnoarq-papeleria {
-  background-image: url("../imagenes/disegnoarq-papeleria.jpg"); }
-
-.disegnoarq-presentacion {
-  background-image: url("../imagenes/disegnoarq-presentacion.jpg"); }
-
-.reciclar-diferencias {
-  background-image: url("../imagenes/reciclar-diferencias.jpg"); }
-
-.reciclar-mobile {
-  background-image: url("../imagenes/reciclar-mobile.jpg"); }
-
-.reciclar-presentacion {
-  background-image: url("../imagenes/reciclar-presentacion.jpg"); }
+        img {
+            max-width: 300px;
+            margin: 1rem 1rem 0 0;
+            height: 200px;
+            width: 300px;
+    
+        }
+    }
+    */ }
+  .trabajosPortada-reciclar__titulo {
+    font-size: 3rem;
+    font-weight: 700;
+    align-self: flex-end;
+    justify-self: flex-start;
+    padding-left: 3rem;
+    font-family: "Staatliches", "Montserrat", "Roboto", Helvetica, Arial, sans-serif; }
 
 .detalleNosotros {
   margin-top: 0.5rem;
