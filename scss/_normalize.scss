@@ -8,12 +8,11 @@ html {
 
 body {
     font-family: 'Palanquin', 'Montserrat', Helvetica, Arial, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 400;
     color: $Negro;
     margin: 0;
     line-height: 1.6;
-    background-color: $GrisClaro;
     letter-spacing: 0.25rem;
 }
 
@@ -52,6 +51,44 @@ a:hover {
         letter-spacing: $TituloBajadaEspaciado;
         padding: $TituloBajadaContenedor;
     
+    }
+}
+
+.tituloProyecto {
+
+
+    &__titulo {
+        font-family: $Titulos;
+        font-size: $SubtitulosSeccion;
+        font-weight: $SubtitulosSeccionPeso;
+        text-align: left;
+        padding: 3rem 2rem 0 2rem ;
+        line-height: $SubtitulosSeccion;
+    }
+
+    &__bajada {
+        font-size: $TituloBajada;
+        font-weight: $TituloBajadaPeso;
+        letter-spacing: $TituloBajadaEspaciado;
+        padding: 0 2rem;
+        text-align: left;
+    
+    }
+
+    &__descripcion {
+        padding: 3rem 2rem 0 2rem ;
+        text-align: left;
+        color: $GrisOscuro;
+
+
+        strong {
+            font-family: $Titulos;
+            font-size: 3rem;
+            line-height: 3rem;
+        }
+
+
+
     }
 }
 
@@ -100,6 +137,7 @@ a:hover {
     }
     
 }
+
 
 
 @media only screen and (max-width: 768px) {
