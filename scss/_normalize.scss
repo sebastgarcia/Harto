@@ -13,7 +13,6 @@ body {
     color: $Negro;
     margin: 0;
     line-height: 1.6;
-    letter-spacing: 0.25rem;
 }
 
 section {
@@ -56,6 +55,7 @@ a:hover {
 
 .tituloProyecto {
 
+    background-color: $GrisClaro;
 
     &__titulo {
         font-family: $Titulos;
@@ -77,8 +77,7 @@ a:hover {
 
     &__descripcion {
         padding: 3rem 2rem 0 2rem ;
-        text-align: left;
-        color: $GrisOscuro;
+        text-align: left;   
 
 
         strong {
@@ -116,6 +115,15 @@ a:hover {
     }     
 }
 
+.animateScroll {
+
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+      
+}
 
 
 

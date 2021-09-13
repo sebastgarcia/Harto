@@ -16,8 +16,7 @@ body {
   font-weight: 400;
   color: #000;
   margin: 0;
-  line-height: 1.6;
-  letter-spacing: 0.25rem; }
+  line-height: 1.6; }
 
 section {
   margin-left: 2rem;
@@ -46,29 +45,28 @@ a:hover {
     letter-spacing: 0.25rem;
     padding: 0 10%; }
 
-.tituloProyecto__titulo {
-  font-family: "Staatliches", "Montserrat", "Roboto", Helvetica, Arial, sans-serif;
-  font-size: 8rem;
-  font-weight: 700;
-  text-align: left;
-  padding: 3rem 2rem 0 2rem;
-  line-height: 8rem; }
-
-.tituloProyecto__bajada {
-  font-size: 1.5rem;
-  font-weight: 300;
-  letter-spacing: 0.25rem;
-  padding: 0 2rem;
-  text-align: left; }
-
-.tituloProyecto__descripcion {
-  padding: 3rem 2rem 0 2rem;
-  text-align: left;
-  color: #2D2C2C; }
-  .tituloProyecto__descripcion strong {
+.tituloProyecto {
+  background-color: #c7c7c7; }
+  .tituloProyecto__titulo {
     font-family: "Staatliches", "Montserrat", "Roboto", Helvetica, Arial, sans-serif;
-    font-size: 3rem;
-    line-height: 3rem; }
+    font-size: 8rem;
+    font-weight: 700;
+    text-align: left;
+    padding: 3rem 2rem 0 2rem;
+    line-height: 8rem; }
+  .tituloProyecto__bajada {
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 0.25rem;
+    padding: 0 2rem;
+    text-align: left; }
+  .tituloProyecto__descripcion {
+    padding: 3rem 2rem 0 2rem;
+    text-align: left; }
+    .tituloProyecto__descripcion strong {
+      font-family: "Staatliches", "Montserrat", "Roboto", Helvetica, Arial, sans-serif;
+      font-size: 3rem;
+      line-height: 3rem; }
 
 .cont {
   display: flex;
@@ -87,6 +85,11 @@ a:hover {
     color: #fff; }
   .cont__enlace:hover {
     color: #c7c7c7; }
+
+.animateScroll {
+  width: 100%; }
+  .animateScroll img {
+    width: 100%; }
 
 .bg-rojo {
   background-color: #e93838;
