@@ -7,7 +7,7 @@
 
 @each $portada in disegnoarq, reciclar {
     .portada-#{$portada} {
-        background-color: crimson;
+        background-color: rgb(0, 0, 0);
         background-size: cover;
         display: grid;
         text-align: left;
@@ -35,9 +35,10 @@
 @each $portada in disegnoarq, reciclar {
     .portada-#{$portada}:hover {
         background-image: url("../imagenes/portada-#{$portada}.jpg");
-        transform: scale(0.9);
+        transform: scale(0.95);
         background-color:transparent;
-        opacity: 0.9;
+        opacity: 0.9;            
+        
         
     }
 }

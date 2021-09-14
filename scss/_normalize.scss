@@ -13,6 +13,7 @@ body {
     color: $Negro;
     margin: 0;
     line-height: 1.6;
+    
 }
 
 section {
@@ -56,6 +57,9 @@ a:hover {
 .tituloProyecto {
 
     background-color: $GrisClaro;
+    margin: auto;
+    justify-self: center;
+    
 
     &__titulo {
         font-family: $Titulos;
@@ -84,12 +88,15 @@ a:hover {
             font-family: $Titulos;
             font-size: 3rem;
             line-height: 3rem;
+            letter-spacing: 0.25rem;
         }
 
 
 
     }
 }
+
+
 
 .cont {
     display: flex;
@@ -117,7 +124,7 @@ a:hover {
 
 .animateScroll {
 
-        width: 100%;
+        max-width: 100%;
 
         img {
             width: 100%;
