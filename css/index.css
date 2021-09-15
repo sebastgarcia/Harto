@@ -12,13 +12,11 @@ html {
 
 body {
   font-family: 'Palanquin', 'Montserrat', Helvetica, Arial, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 400;
   color: #000;
   margin: 0;
-  line-height: 1.6;
-  background-color: #c7c7c7;
-  letter-spacing: 0.25rem; }
+  line-height: 1.6; }
 
 section {
   margin-left: 2rem;
@@ -47,6 +45,32 @@ a:hover {
     letter-spacing: 0.25rem;
     padding: 0 10%; }
 
+.tituloProyecto {
+  background-color: #c7c7c7;
+  margin: auto;
+  justify-self: center; }
+  .tituloProyecto__titulo {
+    font-family: "Staatliches", "Montserrat", "Roboto", Helvetica, Arial, sans-serif;
+    font-size: 8rem;
+    font-weight: 500;
+    text-align: left;
+    padding: 3rem 2rem 0 2rem;
+    line-height: 8rem; }
+  .tituloProyecto__bajada {
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 0.25rem;
+    padding: 0 2rem;
+    text-align: left; }
+  .tituloProyecto__descripcion {
+    padding: 3rem 2rem 0 2rem;
+    text-align: left; }
+    .tituloProyecto__descripcion strong {
+      font-family: "Staatliches", "Montserrat", "Roboto", Helvetica, Arial, sans-serif;
+      font-size: 3rem;
+      line-height: 3rem;
+      letter-spacing: 0.25rem; }
+
 .cont {
   display: flex;
   justify-content: center;
@@ -64,6 +88,11 @@ a:hover {
     color: #fff; }
   .cont__enlace:hover {
     color: #c7c7c7; }
+
+.animateScroll {
+  max-width: 100%; }
+  .animateScroll img {
+    width: 100%; }
 
 .bg-rojo {
   background-color: #e93838;
@@ -116,12 +145,15 @@ header {
   border-top-style: solid;
   border-top-color: #2D2C2C;
   width: 100%;
+  max-width: 1500px;
+  margin: auto;
   margin-top: 2rem;
   margin-bottom: 2rem; }
   header nav {
     display: flex;
     justify-content: space-between;
-    align-content: space-between; }
+    align-content: space-between;
+    justify-self: center; }
     header nav .logo {
       display: flex;
       padding-left: 2rem;
@@ -149,8 +181,18 @@ header {
       border: 0; }
     header nav .modal-header {
       display: flex;
-      justify-content: flex-end;
+      justify-content: space-between;
       margin-top: 2rem; }
+    header nav .homeMenu {
+      display: flex;
+      padding-left: 2rem;
+      position: relative;
+      font-family: "Staatliches", "Montserrat", "Roboto", Helvetica, Arial, sans-serif;
+      font-size: 3rem;
+      font-weight: 500;
+      color: #c7c7c7; }
+    header nav .homeMenu:hover {
+      color: #fff; }
     header nav .cerrarMenu {
       text-align: end;
       display: flex;
@@ -218,7 +260,8 @@ footer .menuFooter {
     font-weight: 400;
     font-family: 'Palanquin', 'Montserrat', 'Roboto', Helvetica, Arial, sans-serif;
     letter-spacing: 0.75rem;
-    text-align: center; }
+    text-align: center;
+    font-size: 1.5rem; }
 
 .intro {
   display: flex;
@@ -373,8 +416,8 @@ footer .menuFooter {
     margin: 0;
     padding: 0rem 10%; }
     .serviciosPortada__descripcion__titulo {
-      font-size: 3rem;
-      font-weight: 700; }
+      font-size: 8rem;
+      font-weight: 500; }
 
 .serviciosPortada-1 {
   border-right: solid;
@@ -390,7 +433,7 @@ footer .menuFooter {
   .serviciosPortada {
     padding: 1rem 0 0 0; }
     .serviciosPortada__descripcion__titulo {
-      font-size: 2rem; }
+      font-size: 7rem; }
     .serviciosPortada__descripcion__texto {
       font-size: 1.25rem; }
   .serviciosPortada-1 {
@@ -403,48 +446,56 @@ footer .menuFooter {
     border-left-width: 0px;
     padding-bottom: 3rem; } }
 
-.trabajosPortada {
-  display: flex;
+.proyectos {
+  height: 70vh; }
+
+.portada-disegnoarq {
+  background-color: black;
+  background-size: cover;
+  display: grid;
   text-align: left;
   flex-direction: column;
-  padding: 5rem 0 0 20px; }
-  .trabajosPortada__imagen {
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    flex-wrap: wrap; }
-    .trabajosPortada__imagen img {
-      max-width: 300px;
-      margin: 1rem 1rem 0 0;
-      height: 200px;
-      width: 300px; }
-  .trabajosPortada__titulo {
-    font-size: 3rem;
-    font-weight: 700; }
+  padding: 0;
+  height: 100%;
+  transition: all 1s; }
+  .portada-disegnoarq__titulo {
+    font-size: 8rem;
+    font-weight: 500;
+    align-self: flex-end;
+    padding-left: 3rem;
+    font-family: "Staatliches", "Montserrat", "Roboto", Helvetica, Arial, sans-serif;
+    color: #fff;
+    line-height: 8rem; }
 
-.disegnoarq-carpeta {
-  background-image: url("../imagenes/disegnoarq-carpeta.jpg"); }
+.portada-reciclar {
+  background-color: black;
+  background-size: cover;
+  display: grid;
+  text-align: left;
+  flex-direction: column;
+  padding: 0;
+  height: 100%;
+  transition: all 1s; }
+  .portada-reciclar__titulo {
+    font-size: 8rem;
+    font-weight: 500;
+    align-self: flex-end;
+    padding-left: 3rem;
+    font-family: "Staatliches", "Montserrat", "Roboto", Helvetica, Arial, sans-serif;
+    color: #fff;
+    line-height: 8rem; }
 
-.disegnoarq-logo {
-  background-image: url("../imagenes/disegnoarq-logo.jpg"); }
+.portada-disegnoarq:hover {
+  background-image: url("../imagenes/portada-disegnoarq.jpg");
+  transform: scale(0.95);
+  background-color: transparent;
+  opacity: 0.9; }
 
-.disegnoarq-mockup {
-  background-image: url("../imagenes/disegnoarq-mockup.jpg"); }
-
-.disegnoarq-papeleria {
-  background-image: url("../imagenes/disegnoarq-papeleria.jpg"); }
-
-.disegnoarq-presentacion {
-  background-image: url("../imagenes/disegnoarq-presentacion.jpg"); }
-
-.reciclar-diferencias {
-  background-image: url("../imagenes/reciclar-diferencias.jpg"); }
-
-.reciclar-mobile {
-  background-image: url("../imagenes/reciclar-mobile.jpg"); }
-
-.reciclar-presentacion {
-  background-image: url("../imagenes/reciclar-presentacion.jpg"); }
+.portada-reciclar:hover {
+  background-image: url("../imagenes/portada-reciclar.jpg");
+  transform: scale(0.95);
+  background-color: transparent;
+  opacity: 0.9; }
 
 .detalleNosotros {
   margin-top: 0.5rem;

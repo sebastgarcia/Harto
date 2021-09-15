@@ -1,41 +1,45 @@
-.trabajosPortada {
 
-    display: flex;
-    text-align: left;
-    flex-direction: column;
-    padding: 5rem 0 0 20px;
+.proyectos {
+    height: 70vh;
 
-    &__imagen {
-        display: flex;
-        justify-content: left;
-        align-items: left; 
-        flex-wrap: wrap;
 
-        img {
-            max-width: 300px;
-            margin: 1rem 1rem 0 0;
-            height: 200px;
-            width: 300px;
+}
+
+@each $portada in disegnoarq, reciclar {
+    .portada-#{$portada} {
+        background-color: rgb(0, 0, 0);
+        background-size: cover;
+        display: grid;
+        text-align: left;
+        flex-direction: column;
+        padding: 0;
+        height: 100%;
+        transition: all 1s;
+
+
     
-        }
+
+        &__titulo {
+            font-size: $SubtitulosSeccion;
+            font-weight: $SubtitulosSeccionPeso;
+            align-self: flex-end;
+            padding-left: 3rem;
+            font-family: $Titulos;
+            color: $Blanco;
+            line-height: 8rem;
+        } 
+
     }
-    
-    &__titulo {
-        font-size: $SubtitulosSeccion;
-        font-weight: $SubtitulosSeccionPeso;
-    } 
 }
 
-@each $portfolio in carpeta,logo,mockup,papeleria,presentacion {
-    .disegnoarq-#{$portfolio} {
-        background-image: url("../imagenes/disegnoarq-#{$portfolio}.jpg");
-    } 
-    
+@each $portada in disegnoarq, reciclar {
+    .portada-#{$portada}:hover {
+        background-image: url("../imagenes/portada-#{$portada}.jpg");
+        transform: scale(0.95);
+        background-color:transparent;
+        opacity: 0.9;            
+        
+        
+    }
 }
 
-@each $portfolio in diferencias,mobile,presentacion {
-    .reciclar-#{$portfolio} {
-        background-image: url("../imagenes/reciclar-#{$portfolio}.jpg");
-    } 
-    
-}
