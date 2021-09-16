@@ -13,6 +13,7 @@ body {
     color: $Negro;
     margin: 0;
     line-height: 1.6;
+    background-color: lightskyblue;
     
 }
 
@@ -102,7 +103,8 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2rem 0 0 0;
+    margin: auto;
+    margin-top: 3rem;
     font-size: 2rem;
     font-weight: 200;
     align-items: center;
