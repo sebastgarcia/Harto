@@ -16,7 +16,8 @@ body {
   font-weight: 400;
   color: #000;
   margin: 0;
-  line-height: 1.6; }
+  line-height: 1.6;
+  background-color: lightskyblue; }
 
 section {
   margin-left: 2rem;
@@ -75,7 +76,8 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2rem 0 0 0;
+  margin: auto;
+  margin-top: 3rem;
   font-size: 2rem;
   font-weight: 200;
   align-items: center;
@@ -175,7 +177,7 @@ header {
       max-width: 100%;
       position: fixed; }
     header nav .modal-content {
-      background-color: #000;
+      background-color: tomato;
       width: 100%;
       height: 100vh;
       border: 0; }
@@ -190,7 +192,7 @@ header {
       font-family: "Staatliches", "Montserrat", "Roboto", Helvetica, Arial, sans-serif;
       font-size: 3rem;
       font-weight: 500;
-      color: #c7c7c7; }
+      color: #2D2C2C; }
     header nav .homeMenu:hover {
       color: #fff; }
     header nav .cerrarMenu {
@@ -198,7 +200,7 @@ header {
       display: flex;
       font-family: "Staatliches", "Montserrat", "Roboto", Helvetica, Arial, sans-serif;
       font-size: 3rem;
-      color: #c7c7c7; }
+      color: #2D2C2C; }
     header nav .cerrarMenu:hover {
       color: #fff; }
     header nav .listaMenu {
@@ -212,7 +214,7 @@ header {
         header nav .listaMenu__items a {
           color: #fff; }
         header nav .listaMenu__items a:hover {
-          color: #c7c7c7; }
+          color: lightskyblue; }
 
 footer .menuFooter {
   position: relative;
@@ -244,15 +246,15 @@ footer .menuFooter {
     flex-direction: column; } }
 
 .marca {
-  margin: auto 0; }
+  margin: auto; }
   .marca__titulo {
-    color: #2D2C2C;
-    margin: 0;
+    color: #fff;
+    margin: auto;
     margin-top: 10rem;
-    font-size: 20rem;
+    font-size: 50rem;
     font-weight: 400;
     font-family: 'Staatliches', 'Montserrat', 'Roboto', Helvetica, Arial, sans-serif;
-    line-height: 15rem;
+    line-height: 45rem;
     text-align: center; }
   .marca__bajada {
     color: #000;
@@ -267,9 +269,9 @@ footer .menuFooter {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0; }
+  margin: auto; }
   .intro__texto {
-    margin: 0;
+    margin: auto;
     padding: 15rem 30%;
     text-align: center;
     font-size: 2rem;
@@ -280,7 +282,7 @@ footer .menuFooter {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0; }
+  margin: auto; }
   .serv__imagen {
     border-right: solid;
     border-right-color: #000;
@@ -294,7 +296,7 @@ footer .menuFooter {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0; }
+    margin: auto; }
     .serv__texto p {
       padding: 0rem 10%; }
 
@@ -303,7 +305,7 @@ footer .menuFooter {
   color: #c7c7c7;
   padding-top: 10rem;
   padding-bottom: 10rem;
-  margin: 0;
+  margin: auto;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -450,8 +452,9 @@ footer .menuFooter {
   height: 70vh; }
 
 .portada-disegnoarq {
-  background-color: black;
+  background-color: tomato;
   background-size: cover;
+  background-position: center center;
   display: grid;
   text-align: left;
   flex-direction: column;
@@ -464,12 +467,13 @@ footer .menuFooter {
     align-self: flex-end;
     padding-left: 3rem;
     font-family: "Staatliches", "Montserrat", "Roboto", Helvetica, Arial, sans-serif;
-    color: #fff;
+    color: #000;
     line-height: 8rem; }
 
 .portada-reciclar {
-  background-color: black;
+  background-color: tomato;
   background-size: cover;
+  background-position: center center;
   display: grid;
   text-align: left;
   flex-direction: column;
@@ -482,27 +486,49 @@ footer .menuFooter {
     align-self: flex-end;
     padding-left: 3rem;
     font-family: "Staatliches", "Montserrat", "Roboto", Helvetica, Arial, sans-serif;
-    color: #fff;
+    color: #000;
     line-height: 8rem; }
 
 .portada-disegnoarq:hover {
   background-image: url("../imagenes/portada-disegnoarq.jpg");
-  transform: scale(0.95);
-  background-color: transparent;
-  opacity: 0.9; }
+  transform: scale(0.97);
+  background-color: transparent; }
 
 .portada-reciclar:hover {
   background-image: url("../imagenes/portada-reciclar.jpg");
-  transform: scale(0.95);
-  background-color: transparent;
-  opacity: 0.9; }
+  transform: scale(0.97);
+  background-color: transparent; }
 
-.detalleNosotros {
-  margin-top: 0.5rem;
-  font-weight: 300;
-  font-family: 'Palanquin', 'Montserrat', 'Roboto', Helvetica, Arial, sans-serif;
-  letter-spacing: 0.25rem;
-  padding: 0 10%; }
+.aboutConcepto {
+  font-size: 8rem;
+  font-weight: 600;
+  font-family: "Staatliches", "Montserrat", "Roboto", Helvetica, Arial, sans-serif;
+  text-align: left;
+  line-height: 9rem;
+  letter-spacing: 0.2rem;
+  padding: 5rem 0; }
+  .aboutConcepto .tomato {
+    color: tomato;
+    text-align: right; }
+
+.aboutDetalle, .aboutEmpleados {
+  font-family: "Roboto", "Montserrat", Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: left;
+  line-height: 3rem; }
+  .aboutDetalle strong, .aboutEmpleados strong {
+    font-weight: 900; }
+
+.aboutEmpleados {
+  padding-top: 3rem; }
+
+.cita {
+  font-size: 1.7rem;
+  padding-left: 2rem; }
+
+.aboutFoto img {
+  width: 100%; }
 
 input {
   border: 0;
