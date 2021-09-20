@@ -156,50 +156,51 @@ header {
     justify-content: space-between;
     align-content: space-between;
     justify-self: center; }
-    header nav .logo {
+    header nav .logo, header nav .homeMenu {
       display: flex;
       padding-left: 2rem;
       position: relative;
       font-family: "Staatliches", "Montserrat", "Roboto", Helvetica, Arial, sans-serif;
       font-size: 3rem;
       font-weight: 500; }
-    header nav .logo:hover {
+    header nav .logo:hover, header nav .homeMenu:hover {
       background-color: transparent; }
-    header nav .menu {
+    header nav .menu, header nav .cerrarMenu {
       display: flex;
       font-family: "Staatliches", "Montserrat", "Roboto", Helvetica, Arial, sans-serif;
       font-size: 3rem;
       font-weight: 500;
-      padding-right: 2rem; }
+      padding-right: 2rem;
+      text-align: right; }
     header nav .modal-dialog {
       margin: 0;
       width: 100%;
       max-width: 100%;
-      position: fixed; }
+      position: fixed;
+      display: flex; }
     header nav .modal-content {
       background-color: tomato;
       width: 100%;
       height: 100vh;
-      border: 0; }
+      border: 0;
+      display: flex; }
     header nav .modal-header {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      padding: 0 1rem;
       display: flex;
       justify-content: space-between;
-      margin-top: 2rem; }
+      align-content: space-between;
+      justify-self: center;
+      /*
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;*/ }
     header nav .homeMenu {
-      display: flex;
-      padding-left: 2rem;
-      position: relative;
-      font-family: "Staatliches", "Montserrat", "Roboto", Helvetica, Arial, sans-serif;
-      font-size: 3rem;
-      font-weight: 500;
       color: #2D2C2C; }
     header nav .homeMenu:hover {
       color: #fff; }
     header nav .cerrarMenu {
-      text-align: end;
-      display: flex;
-      font-family: "Staatliches", "Montserrat", "Roboto", Helvetica, Arial, sans-serif;
-      font-size: 3rem;
       color: #2D2C2C; }
     header nav .cerrarMenu:hover {
       color: #fff; }
@@ -507,9 +508,13 @@ footer .menuFooter {
   line-height: 9rem;
   letter-spacing: 0.2rem;
   padding: 5rem 0; }
-  .aboutConcepto .tomato {
+  .aboutConcepto__izquierda {
+    text-align: left;
+    padding: 0 5% 0 0; }
+  .aboutConcepto__derecha {
     color: tomato;
-    text-align: right; }
+    text-align: right;
+    padding: 0 0 0 5%; }
 
 .aboutDetalle, .aboutEmpleados {
   font-family: "Roboto", "Montserrat", Helvetica, Arial, sans-serif;
