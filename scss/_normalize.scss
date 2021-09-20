@@ -13,7 +13,7 @@ body {
     color: $Negro;
     margin: 0;
     line-height: 1.6;
-    background-color: lightskyblue;
+    background-color: lightsteelblue;
     
 }
 
@@ -57,7 +57,7 @@ a:hover {
 
 .tituloProyecto {
 
-    background-color: $GrisClaro;
+    
     margin: auto;
     justify-self: center;
     
@@ -77,12 +77,14 @@ a:hover {
         letter-spacing: $TituloBajadaEspaciado;
         padding: 0 2rem;
         text-align: left;
+        
     
     }
 
     &__descripcion {
         padding: 3rem 2rem 0 2rem ;
         text-align: left;   
+        line-height: 2.7rem;
 
 
         strong {
@@ -97,7 +99,31 @@ a:hover {
     }
 }
 
+.animateScroll {
 
+    max-width: 100%;
+
+    img {
+        width: 100%;
+        position: relative;
+    }
+  
+}
+
+.textoDesarrollo {
+
+    text-align: left;
+    padding: 5% 3%;
+    display: flex;
+    align-content: center;
+
+    p {
+
+    }
+    
+
+
+}
 
 .cont {
     display: flex;
@@ -124,15 +150,6 @@ a:hover {
     }     
 }
 
-.animateScroll {
-
-        max-width: 100%;
-
-        img {
-            width: 100%;
-        }
-      
-}
 
 
 
@@ -141,14 +158,11 @@ a:hover {
         background-color: $color;
         color: $Negro;
 
-        a{
-            color: $Negro;
+        a {
+            color: $Blanco;
         }
 
-        a:hover {
-            background-color: $GrisOscuro;
-            color: $color;
-        }
+        
 
 
     }

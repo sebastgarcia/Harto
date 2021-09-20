@@ -3,11 +3,16 @@ $GrisOscuro: #2D2C2C;
 $GrisClaro: #c7c7c7;
 $Blanco: #fff;
 $Negro: #000;
+$Rojo: tomato;
+
 
 /*FONDOS*/
 $colors: (
-    rojo: rgb(233, 56, 56),
-    claro: $GrisClaro
+    rojo: tomato,
+    grisOscuro: $GrisOscuro,
+    grisClaro: $GrisClaro,
+    reciclarClaro: #f3ffef,
+    reciclarOscuro: #d8ffd0,
 
 );
 

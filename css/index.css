@@ -17,7 +17,7 @@ body {
   color: #000;
   margin: 0;
   line-height: 1.6;
-  background-color: lightskyblue; }
+  background-color: lightsteelblue; }
 
 section {
   margin-left: 2rem;
@@ -47,7 +47,6 @@ a:hover {
     padding: 0 10%; }
 
 .tituloProyecto {
-  background-color: #c7c7c7;
   margin: auto;
   justify-self: center; }
   .tituloProyecto__titulo {
@@ -65,12 +64,25 @@ a:hover {
     text-align: left; }
   .tituloProyecto__descripcion {
     padding: 3rem 2rem 0 2rem;
-    text-align: left; }
+    text-align: left;
+    line-height: 2.7rem; }
     .tituloProyecto__descripcion strong {
       font-family: "Staatliches", "Montserrat", "Roboto", Helvetica, Arial, sans-serif;
       font-size: 3rem;
       line-height: 3rem;
       letter-spacing: 0.25rem; }
+
+.animateScroll {
+  max-width: 100%; }
+  .animateScroll img {
+    width: 100%;
+    position: relative; }
+
+.textoDesarrollo {
+  text-align: left;
+  padding: 5% 3%;
+  display: flex;
+  align-content: center; }
 
 .cont {
   display: flex;
@@ -91,28 +103,35 @@ a:hover {
   .cont__enlace:hover {
     color: #c7c7c7; }
 
-.animateScroll {
-  max-width: 100%; }
-  .animateScroll img {
-    width: 100%; }
-
 .bg-rojo {
-  background-color: #e93838;
+  background-color: tomato;
   color: #000; }
   .bg-rojo a {
-    color: #000; }
-  .bg-rojo a:hover {
-    background-color: #2D2C2C;
-    color: #e93838; }
+    color: #fff; }
 
-.bg-claro {
+.bg-grisOscuro {
+  background-color: #2D2C2C;
+  color: #000; }
+  .bg-grisOscuro a {
+    color: #fff; }
+
+.bg-grisClaro {
   background-color: #c7c7c7;
   color: #000; }
-  .bg-claro a {
-    color: #000; }
-  .bg-claro a:hover {
-    background-color: #2D2C2C;
-    color: #c7c7c7; }
+  .bg-grisClaro a {
+    color: #fff; }
+
+.bg-reciclarClaro {
+  background-color: #f3ffef;
+  color: #000; }
+  .bg-reciclarClaro a {
+    color: #fff; }
+
+.bg-reciclarOscuro {
+  background-color: #d8ffd0;
+  color: #000; }
+  .bg-reciclarOscuro a {
+    color: #fff; }
 
 @media only screen and (max-width: 768px) {
   .tituloSeccion {
@@ -215,7 +234,7 @@ header {
         header nav .listaMenu__items a {
           color: #fff; }
         header nav .listaMenu__items a:hover {
-          color: lightskyblue; }
+          color: lightsteelblue; }
 
 footer .menuFooter {
   position: relative;
