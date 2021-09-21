@@ -108,20 +108,32 @@ header {
 
             &__items{
                 font-family: $Titulos;
-                font-size: $TituloSeccion - 1rem;
-                padding: 0;
-                line-height: 12rem;
+                font-size: 25vh;
+                line-height: 20vh;
+                padding: 3vh 0;
+
+
 
                 a{
                     color: $Blanco;
+                    transition: width 1s;
+                    position: absolute;
+                    width: 0px;
+                    padding: 2rem 0 2rem 1vw;
+
 
                 }
 
                 a:hover {
-                    color: lightsteelblue;
+                    color: tomato;
+                    background-color: lightsteelblue;
+                    width: 50%;
+
                 }
 
             }
+
+            
         }
 
     }

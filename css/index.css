@@ -85,51 +85,52 @@ a:hover {
   align-content: center; }
 
 .cont {
+  font-family: "Staatliches", "Montserrat", "Roboto", Helvetica, Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
   margin-top: 3rem;
   font-size: 2rem;
-  font-weight: 200;
-  align-items: center;
+  align-content: center;
   text-align: center;
   padding: 5rem 0;
-  background-color: #2D2C2C;
-  color: #fff; }
-  .cont__enlace {
-    font-family: 'Staatliches', 'Montserrat', 'Roboto', Helvetica, Arial, sans-serif;
-    color: #fff; }
-  .cont__enlace:hover {
-    color: #c7c7c7; }
+  color: tomato;
+  letter-spacing: 0.25rem;
+  line-height: 2rem; }
+  .cont__texto {
+    margin: 0; }
+    .cont__texto__enlace {
+      color: #fff;
+      transition: width 1s;
+      width: 20vw; }
+    .cont__texto__enlace:hover {
+      color: #2D2C2C;
+      background-color: lightsteelblue;
+      width: 50vw; }
 
 .bg-rojo {
-  background-color: tomato;
-  color: #000; }
+  background-color: tomato; }
   .bg-rojo a {
     color: #fff; }
 
 .bg-grisOscuro {
-  background-color: #2D2C2C;
-  color: #000; }
+  background-color: #2D2C2C; }
   .bg-grisOscuro a {
     color: #fff; }
 
 .bg-grisClaro {
-  background-color: #c7c7c7;
-  color: #000; }
+  background-color: #c7c7c7; }
   .bg-grisClaro a {
     color: #fff; }
 
 .bg-reciclarClaro {
-  background-color: #f3ffef;
-  color: #000; }
+  background-color: #f3ffef; }
   .bg-reciclarClaro a {
     color: #fff; }
 
 .bg-reciclarOscuro {
-  background-color: #d8ffd0;
-  color: #000; }
+  background-color: #d8ffd0; }
   .bg-reciclarOscuro a {
     color: #fff; }
 
@@ -228,21 +229,22 @@ header {
       flex-direction: column; }
       header nav .listaMenu__items {
         font-family: "Staatliches", "Montserrat", "Roboto", Helvetica, Arial, sans-serif;
-        font-size: 9rem;
-        padding: 0;
-        line-height: 12rem; }
+        font-size: 25vh;
+        line-height: 20vh;
+        padding: 3vh 0; }
         header nav .listaMenu__items a {
-          color: #fff; }
+          color: #fff;
+          transition: width 1s;
+          position: absolute;
+          width: 0px;
+          padding: 2rem 0 2rem 1vw; }
         header nav .listaMenu__items a:hover {
-          color: lightsteelblue; }
+          color: tomato;
+          background-color: lightsteelblue;
+          width: 50%; }
 
-footer .menuFooter {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding-top: 0.5rem;
+footer {
+  padding: 0;
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #2D2C2C;
@@ -250,14 +252,25 @@ footer .menuFooter {
   border-top-style: solid;
   border-top-color: #2D2C2C;
   width: 100%;
+  max-width: 1500px;
+  margin: auto;
   margin-top: 2rem;
   margin-bottom: 2rem; }
-  footer .menuFooter__lista {
+  footer .menuFooter {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
     list-style: none;
-    display: flex; }
-    footer .menuFooter__lista__item {
-      font-size: 1.25rem; }
-    footer .menuFooter__lista__item a:hover {
+    margin: auto;
+    padding: 1rem 40%; }
+    footer .menuFooter__item {
+      font-size: 1.5rem;
+      font-family: "Staatliches", "Montserrat", "Roboto", Helvetica, Arial, sans-serif;
+      padding: 0 2rem;
+      opacity: 0.8; }
+      footer .menuFooter__item a {
+        color: #2D2C2C; }
+    footer .menuFooter a:hover {
       background-color: #2D2C2C;
       color: #c7c7c7; }
 
@@ -554,92 +567,48 @@ footer .menuFooter {
 .aboutFoto img {
   width: 100%; }
 
-input {
-  border: 0;
-  border-width: 0;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: 000;
-  padding-left: 5px;
-  margin-bottom: 15px;
-  background-color: #c7c7c7;
-  max-width: 60%; }
-
-label {
-  padding-top: 1rem;
-  padding-bottom: 1rem; }
-
 .contenedorFormulario {
   text-align: left;
-  padding: 2rem 3rem 2rem 3rem !important; }
+  padding: 0 5%; }
   .contenedorFormulario .formularioContacto {
-    padding: 1rem 0;
-    text-align: left; }
-    .contenedorFormulario .formularioContacto__titulo {
-      font-size: 3rem; }
-    .contenedorFormulario .formularioContacto__datosPersonales {
-      padding: 1rem 0;
-      display: flex;
-      justify-content: flex-start;
-      flex-wrap: wrap; }
-      .contenedorFormulario .formularioContacto__datosPersonales__campo {
-        padding-right: 1rem; }
-    .contenedorFormulario .formularioContacto__presenciaRRSS {
-      padding: 1rem 0;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap; }
-      .contenedorFormulario .formularioContacto__presenciaRRSS__titulo {
-        display: block; }
-        .contenedorFormulario .formularioContacto__presenciaRRSS__titulo h4 {
-          font-size: 1.5rem; }
-      .contenedorFormulario .formularioContacto__presenciaRRSS__listadoRRSS {
-        display: flex;
-        flex-wrap: wrap; }
-        .contenedorFormulario .formularioContacto__presenciaRRSS__listadoRRSS__red {
-          padding-right: 2rem; }
-    .contenedorFormulario .formularioContactonewsletter {
-      padding: 1rem 0; }
-      .contenedorFormulario .formularioContactonewsletter__titulo {
-        font-size: 1.5rem; }
-      .contenedorFormulario .formularioContactonewsletter select {
-        margin-top: 1rem;
-        margin-bottom: 1rem; }
-    .contenedorFormulario .formularioContacto__comentario {
-      display: flex;
-      flex-direction: column;
-      align-content: start; }
-      .contenedorFormulario .formularioContacto__comentario__mensaje {
-        padding-left: 8px;
-        width: 70%;
-        max-width: 700px;
-        height: 100px;
-        margin-bottom: 0.75rem;
-        background-color: #c7c7c7; }
-    .contenedorFormulario .formularioContacto__boton {
-      font-weight: 600;
-      padding: 0.5rem; }
-    .contenedorFormulario .formularioContacto__boton:hover {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3rem; }
+    .contenedorFormulario .formularioContacto label {
+      color: #2D2C2C;
+      font-size: 1.5rem;
+      opacity: 0.9;
+      letter-spacing: 0.15rem;
+      font-family: "Staatliches", "Montserrat", "Roboto", Helvetica, Arial, sans-serif; }
+    .contenedorFormulario .formularioContacto input, .contenedorFormulario .formularioContacto textarea {
+      font-size: 8rem;
+      background-color: transparent;
+      padding-left: 2rem;
+      border: 0;
+      color: #2D2C2C; }
+      .contenedorFormulario .formularioContacto input:focus, .contenedorFormulario .formularioContacto textarea:focus {
+        outline: none; }
+    .contenedorFormulario .formularioContacto textarea {
+      overflow-y: hidden; }
+      .contenedorFormulario .formularioContacto textarea:focus {
+        outline: none; }
+    .contenedorFormulario .formularioContacto .linea {
       background-color: #2D2C2C;
-      color: #c7c7c7; }
-
-@media only screen and (max-width: 768px) {
-  .contenedorFormulario .formularioContacto__comentario__mensaje {
-    width: 100%; } }
-
-@media only screen and (max-width: 500px) {
-  .contenedorFormulario {
-    text-align: left;
-    padding: 2rem 3rem 2rem 3rem !important; }
-    .contenedorFormulario .formularioContacto__presenciaRRSS__listadoRRSS {
+      opacity: 0.5;
+      height: 2px;
+      left: 0;
+      transform-origin: left;
+      width: 100%; }
+    .contenedorFormulario .formularioContacto__botones {
       display: flex;
-      flex-wrap: wrap;
-      flex-direction: column; }
-      .contenedorFormulario .formularioContacto__presenciaRRSS__listadoRRSS__ig {
-        display: inline-block; }
-      .contenedorFormulario .formularioContacto__presenciaRRSS__listadoRRSS__fb {
-        display: inline-block; }
-      .contenedorFormulario .formularioContacto__presenciaRRSS__listadoRRSS__tw {
-        display: inline-block; }
-      .contenedorFormulario .formularioContacto__presenciaRRSS__listadoRRSS__otra {
-        display: inline-block; } }
+      justify-content: space-around; }
+      .contenedorFormulario .formularioContacto__botones__boton, .contenedorFormulario .formularioContacto__botones__boton2 {
+        font-family: "Staatliches", "Montserrat", "Roboto", Helvetica, Arial, sans-serif;
+        padding-right: 2rem;
+        font-size: 4rem !important; }
+        .contenedorFormulario .formularioContacto__botones__boton:hover, .contenedorFormulario .formularioContacto__botones__boton2:hover {
+          background-color: tomato; }
+      .contenedorFormulario .formularioContacto__botones__boton2 {
+        font-size: 2rem !important; }
+        .contenedorFormulario .formularioContacto__botones__boton2:hover {
+          background-color: tomato; }

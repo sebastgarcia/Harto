@@ -117,37 +117,41 @@ a:hover {
     display: flex;
     align-content: center;
 
-    p {
-
-    }
-    
-
 
 }
 
 .cont {
+    font-family: $Titulos;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
     margin-top: 3rem;
     font-size: 2rem;
-    font-weight: 200;
-    align-items: center;
+    align-content: center;
     text-align: center;
     padding: 5rem 0;
-    background-color: $GrisOscuro;
-    color: $Blanco;
+    color: $Rojo;
+    letter-spacing: 0.25rem;
+    line-height: 2rem;
 
-    &__enlace {
-        font-family: 'Staatliches', 'Montserrat', 'Roboto', Helvetica, Arial, sans-serif;
-        color: #fff;
-    }
+    &__texto{
+        margin: 0;
+    
 
-    &__enlace:hover {
+        &__enlace {
+            color: $Blanco;
+            transition: width 1s;
+            width: 20vw;
+        }
+
+        &__enlace:hover {
        
-        color: $GrisClaro;   
-    }     
+            color: $GrisOscuro; 
+            background-color: lightsteelblue;  
+            width: 50vw;
+        }  
+    }   
 }
 
 
@@ -156,14 +160,10 @@ a:hover {
 @each $key, $color in $colors {
     .bg-#{$key} {
         background-color: $color;
-        color: $Negro;
 
         a {
             color: $Blanco;
-        }
-
-        
-
+        }      
 
     }
     
