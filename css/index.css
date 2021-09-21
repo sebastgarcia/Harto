@@ -85,51 +85,52 @@ a:hover {
   align-content: center; }
 
 .cont {
+  font-family: "Staatliches", "Montserrat", "Roboto", Helvetica, Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
   margin-top: 3rem;
   font-size: 2rem;
-  font-weight: 200;
-  align-items: center;
+  align-content: center;
   text-align: center;
   padding: 5rem 0;
-  background-color: #2D2C2C;
-  color: #fff; }
-  .cont__enlace {
-    font-family: 'Staatliches', 'Montserrat', 'Roboto', Helvetica, Arial, sans-serif;
-    color: #fff; }
-  .cont__enlace:hover {
-    color: #c7c7c7; }
+  color: tomato;
+  letter-spacing: 0.25rem;
+  line-height: 2rem; }
+  .cont__texto {
+    margin: 0; }
+    .cont__texto__enlace {
+      color: #fff;
+      transition: width 1s;
+      width: 20vw; }
+    .cont__texto__enlace:hover {
+      color: #2D2C2C;
+      background-color: lightsteelblue;
+      width: 50vw; }
 
 .bg-rojo {
-  background-color: tomato;
-  color: #000; }
+  background-color: tomato; }
   .bg-rojo a {
     color: #fff; }
 
 .bg-grisOscuro {
-  background-color: #2D2C2C;
-  color: #000; }
+  background-color: #2D2C2C; }
   .bg-grisOscuro a {
     color: #fff; }
 
 .bg-grisClaro {
-  background-color: #c7c7c7;
-  color: #000; }
+  background-color: #c7c7c7; }
   .bg-grisClaro a {
     color: #fff; }
 
 .bg-reciclarClaro {
-  background-color: #f3ffef;
-  color: #000; }
+  background-color: #f3ffef; }
   .bg-reciclarClaro a {
     color: #fff; }
 
 .bg-reciclarOscuro {
-  background-color: #d8ffd0;
-  color: #000; }
+  background-color: #d8ffd0; }
   .bg-reciclarOscuro a {
     color: #fff; }
 
@@ -228,13 +229,19 @@ header {
       flex-direction: column; }
       header nav .listaMenu__items {
         font-family: "Staatliches", "Montserrat", "Roboto", Helvetica, Arial, sans-serif;
-        font-size: 9rem;
-        padding: 0;
-        line-height: 12rem; }
+        font-size: 25vh;
+        line-height: 20vh;
+        padding: 3vh 0; }
         header nav .listaMenu__items a {
-          color: #fff; }
+          color: #fff;
+          transition: width 1s;
+          position: absolute;
+          width: 0px;
+          padding: 2rem 0 2rem 1vw; }
         header nav .listaMenu__items a:hover {
-          color: lightsteelblue; }
+          color: tomato;
+          background-color: lightsteelblue;
+          width: 50%; }
 
 footer {
   padding: 0;
