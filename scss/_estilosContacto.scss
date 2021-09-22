@@ -97,8 +97,30 @@
 }
 
 @media only screen and (max-width: 768px) {
+        
+    .formularioContacto{
+
+        input {
+            font-size: 5rem !important;
+
+        }
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+        
+    .formularioContacto{
+
+        input {
+            font-size: 3rem !important;
+
+        }
+    }
+}
+    
 
     
-}
+
 
 

@@ -14,6 +14,7 @@ body {
     margin: 0;
     line-height: 1.6;
     background-color: lightsteelblue;
+    min-width: 380px;
     
 }
 
@@ -44,6 +45,7 @@ a:hover {
         font-size: $TituloSeccion;
         font-weight: $TituloSeccionPeso;
         margin-top: $TituloMargen;
+        color: $GrisOscuro;
     }
 
     &__bajada {
@@ -51,6 +53,7 @@ a:hover {
         font-weight: $TituloBajadaPeso;
         letter-spacing: $TituloBajadaEspaciado;
         padding: $TituloBajadaContenedor;
+        line-height: 2rem;
     
     }
 }
@@ -269,8 +272,6 @@ a:hover {
                 letter-spacing: 0.25rem;
             }
         }
-
-        
     }
 }
 
