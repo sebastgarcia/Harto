@@ -45,13 +45,14 @@ header {
 
         }
         
-
+/*MODAL*/
         .modal-dialog{
             margin: 0;
             width: 100%;
             max-width: 100%;
             position: fixed;
             display: flex;
+            height: 100vh;
 
 
         }
@@ -72,12 +73,7 @@ header {
             justify-content: space-between;
             align-content: space-between;
             justify-self: center;
-            
-            /*
-            display: flex;
-            justify-content: space-between;
-            margin-top: 2rem;*/
-            
+                        
         }
 
 
@@ -105,12 +101,13 @@ header {
         .listaMenu {
             display: flex;
             flex-direction: column;
+            list-style: none;
 
             &__items{
                 font-family: $Titulos;
-                font-size: 25vh;
-                line-height: 20vh;
-                padding: 3vh 0;
+                font-size: 18rem;
+                line-height: 14rem;
+                padding-bottom: 16rem;
 
 
 
@@ -119,25 +116,65 @@ header {
                     transition: width 1s;
                     position: absolute;
                     width: 0px;
-                    padding: 2rem 0 2rem 1vw;
-
+                    padding: 2rem;
 
                 }
 
                 a:hover {
                     color: tomato;
                     background-color: lightsteelblue;
-                    width: 50%;
+                    width: 80%;
 
                 }
-
-            }
-
-            
+            }           
         }
-
     }
 }
+
+
+@media only screen and (max-width: 910px) {
+    
+    .listaMenu__items { 
+        font-size: 14rem !important;
+        line-height: 9rem !important;
+        padding-bottom: 12rem !important;
+
+        a:hover {
+            width: 100% !important;
+
+        }
+    }
+    
+}
+    
+@media only screen and (max-width: 680px) {
+    
+    .listaMenu__items { 
+        font-size: 10rem !important;
+        line-height: 8rem !important;
+        padding-bottom: 10rem !important;
+
+      
+    }
+    
+}
+
+@media only screen and (max-width: 490px) {
+    
+    .listaMenu{
+        padding: 0;
+    
+        &__items { 
+            font-size: 6rem !important;
+            line-height: 3rem !important;
+            padding-bottom: 6rem !important;
+        }
+      
+    }
+    
+}
+
+
 
 
 
