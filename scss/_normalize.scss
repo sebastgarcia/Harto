@@ -127,13 +127,13 @@ a:hover {
     align-items: center;
     margin: auto;
     margin-top: 3rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
     align-content: center;
     text-align: center;
     padding: 5rem 0;
     color: $Rojo;
     letter-spacing: 0.25rem;
-    line-height: 2rem;
+    line-height: 3rem;
 
     &__texto{
         margin: 0;
@@ -142,14 +142,14 @@ a:hover {
         &__enlace {
             color: $Blanco;
             transition: width 1s;
-            width: 20vw;
+            width: 95vw;
         }
 
         &__enlace:hover {
        
             color: $GrisOscuro; 
             background-color: lightsteelblue;  
-            width: 50vw;
+            width: 40vw;
         }  
     }   
 }
@@ -186,9 +186,19 @@ a:hover {
         }
     }
 
+    
     .cont {
-        font-size: 3rem;
+        font-size: 2rem;
+        line-height: 2rem;
         padding: 3rem 0;
+        letter-spacing: 0.15rem;
+
+        &__texto{
+    
+            &__enlace:hover {
+                width: 50vw;
+            }  
+        }  
         
     }
  
@@ -214,6 +224,11 @@ a:hover {
         }
     }
 
-     
+    .cont {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        padding: 2rem 0; 
+        
+    }
 
 }

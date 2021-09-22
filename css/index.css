@@ -91,23 +91,23 @@ a:hover {
   align-items: center;
   margin: auto;
   margin-top: 3rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
   align-content: center;
   text-align: center;
   padding: 5rem 0;
   color: tomato;
   letter-spacing: 0.25rem;
-  line-height: 2rem; }
+  line-height: 3rem; }
   .cont__texto {
     margin: 0; }
     .cont__texto__enlace {
       color: #fff;
       transition: width 1s;
-      width: 20vw; }
+      width: 95vw; }
     .cont__texto__enlace:hover {
       color: #2D2C2C;
       background-color: lightsteelblue;
-      width: 50vw; }
+      width: 40vw; }
 
 .bg-rojo {
   background-color: tomato; }
@@ -143,8 +143,12 @@ a:hover {
       font-size: 1.25rem;
       padding: 0; }
   .cont {
-    font-size: 3rem;
-    padding: 3rem 0; }
+    font-size: 2rem;
+    line-height: 2rem;
+    padding: 3rem 0;
+    letter-spacing: 0.15rem; }
+    .cont__texto__enlace:hover {
+      width: 50vw; }
   .nav {
     padding: 0 2rem 0 2rem; } }
 
@@ -155,7 +159,11 @@ a:hover {
       font-size: 6rem; }
     .tituloSeccion__bajada {
       font-size: 1.25rem;
-      padding: 0; } }
+      padding: 0; }
+  .cont {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding: 2rem 0; } }
 
 /*PARTES*/
 header {
@@ -262,7 +270,7 @@ header {
     .listaMenu__items {
       font-size: 6rem !important;
       line-height: 3rem !important;
-      padding-bottom: 6rem !important; } }
+      padding-bottom: 8rem !important; } }
 
 footer {
   padding: 0;
