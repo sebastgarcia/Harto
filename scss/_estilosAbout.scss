@@ -29,7 +29,7 @@
     line-height: 3rem;
 
     strong {
-        font-weight: 900;
+        font-weight: 600;
     }
 
     
@@ -51,5 +51,46 @@
 
     img {
         width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 910px) {
+    
+    .aboutConcepto {
+        font-size: 6rem;
+        font-weight: 600;
+        line-height: 6rem;
+    }
+
+    .aboutDetalle {
+        font-size: 1.5rem;
+        line-height: 2rem;
+
+        
+    }
+
+    .aboutEmpleados{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding-top: 1.5rem;
+    }
+
+    .cita {
+        font-size: 1.3rem;
+        padding-left: 2rem;
+    
+    }
+
+
+}
+
+@media only screen and (max-width: 425px) {
+    
+    .aboutConcepto {
+        font-size: 5rem;
+        font-weight: 600;
+        line-height: 5rem;
+        padding: 3rem 0;
     }
 }
