@@ -93,11 +93,27 @@ a:hover {
             line-height: 3rem;
             letter-spacing: 0.25rem;
         }
+    }
+
+    &__tags{
+        font-size: 1.5rem;
+        text-align: left;   
+        padding: 0 2rem;
+        font-weight: 400;
+        padding: 0rem 2rem;
 
 
 
+
+        strong {
+            font-family: $Titulos;
+            font-size: 1.7rem;
+            line-height: 1.7rem;
+            letter-spacing: 0.25rem;
+        }
     }
 }
+
 
 .animateScroll {
 
@@ -202,11 +218,60 @@ a:hover {
         
     }
  
+      
+    .tituloProyecto {
         
-    .nav {
-        padding: 0 2rem 0 2rem;
-    }  
+    
+        &__titulo {
+            font-size: $SubtitulosSeccion;
+            font-weight: $SubtitulosSeccionPeso;
+            padding: 3rem 1rem 0 1rem ;
+            line-height: $SubtitulosSeccion;
+        }
+    
+        &__bajada {
+            font-size: $TituloBajada;
+            font-weight: $TituloBajadaPeso;
+            letter-spacing: $TituloBajadaEspaciado;
+            padding: 0 1rem;
+            text-align: left;
+            margin-bottom: 0;
+            
+        
+        }
 
+        &__descripcion {
+            padding: 1.5rem 1rem 0 1rem ;
+            text-align: left;   
+            line-height: 2.5rem;
+            font-size: 1.7rem;
+
+            strong {
+                font-size: 2rem;
+                line-height: 2rem;
+            }
+        }
+
+        &__tags{
+            font-size: 1.5rem;
+            text-align: left;   
+            padding: 0 2rem;
+            font-weight: 400;
+            padding: 0rem 1rem;
+    
+    
+    
+    
+            strong {
+                font-family: $Titulos;
+                font-size: 1.7rem;
+                line-height: 1.7rem;
+                letter-spacing: 0.25rem;
+            }
+        }
+
+        
+    }
 }
 
 @media only screen and (max-width: 375px) {
