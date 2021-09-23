@@ -88,7 +88,7 @@ a:hover {
         padding: 3rem 2rem 0 2rem ;
         text-align: left;   
         line-height: 2.7rem;
-
+        font-size: 1.8rem;
 
         strong {
             font-family: $Titulos;
@@ -188,6 +188,47 @@ a:hover {
     
 }
 
+.paginaNoEncontrada {
+    color: $GrisOscuro;
+    margin: 10rem 0 5rem 0;
+    font-size: 20rem;
+    font-weight: 400;
+    font-family: $Titulos;
+    line-height: 15rem;
+    text-align: center; }
+  
+.regresaHome {
+    color: $Negro;
+    margin-top: 0.5rem;
+    letter-spacing: 0.5rem;
+    text-align: center; 
+    font-size: $TituloBajada;
+    font-weight: $TituloBajadaPeso;
+    line-height: 3rem;
+
+    .noHover:hover {
+        background-color: transparent;
+        color: $Negro;
+    
+    }
+        
+    a {
+        font-family: $Titulos; 
+        padding: 0 1rem;
+    }
+        
+    a:hover {
+        background-color: $GrisOscuro;
+        color: $GrisClaro; 
+    }
+
+}  
+
+
+
+        
+
+
 
 
 @media only screen and (max-width: 768px) {
@@ -273,7 +314,32 @@ a:hover {
             }
         }
     }
+
+    .paginaNoEncontrada {
+        font-size: 10rem;
+        line-height: 8rem;
+        margin: 7rem 0 3rem 0; 
+    }
+    
+    .regresaHome {
+        margin-top: 0.25rem;
+    } 
 }
+
+@media only screen and (max-width: 500px) {
+    .paginaNoEncontrada {
+        font-size: 4rem;
+        line-height: 5rem;
+        margin: 5rem 0 3rem 0; 
+    }
+    
+        .regresaHome {
+        letter-spacing: 0.25rem; 
+    } 
+    
+}
+
+
 
 @media only screen and (max-width: 375px) {
     .tituloSeccion {  

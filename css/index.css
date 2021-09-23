@@ -68,7 +68,8 @@ a:hover {
   .tituloProyecto__descripcion {
     padding: 3rem 2rem 0 2rem;
     text-align: left;
-    line-height: 2.7rem; }
+    line-height: 2.7rem;
+    font-size: 1.8rem; }
     .tituloProyecto__descripcion strong {
       font-family: "Staatliches", "Montserrat", "Roboto", Helvetica, Arial, sans-serif;
       font-size: 3rem;
@@ -148,6 +149,33 @@ a:hover {
   .bg-reciclarOscuro a {
     color: #fff; }
 
+.paginaNoEncontrada {
+  color: #2D2C2C;
+  margin: 10rem 0 5rem 0;
+  font-size: 20rem;
+  font-weight: 400;
+  font-family: "Staatliches", "Montserrat", "Roboto", Helvetica, Arial, sans-serif;
+  line-height: 15rem;
+  text-align: center; }
+
+.regresaHome {
+  color: #000;
+  margin-top: 0.5rem;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 3rem; }
+  .regresaHome .noHover:hover {
+    background-color: transparent;
+    color: #000; }
+  .regresaHome a {
+    font-family: "Staatliches", "Montserrat", "Roboto", Helvetica, Arial, sans-serif;
+    padding: 0 1rem; }
+  .regresaHome a:hover {
+    background-color: #2D2C2C;
+    color: #c7c7c7; }
+
 @media only screen and (max-width: 768px) {
   .tituloSeccion {
     padding-bottom: 2rem; }
@@ -193,7 +221,21 @@ a:hover {
       font-family: "Staatliches", "Montserrat", "Roboto", Helvetica, Arial, sans-serif;
       font-size: 1.7rem;
       line-height: 1.7rem;
-      letter-spacing: 0.25rem; } }
+      letter-spacing: 0.25rem; }
+  .paginaNoEncontrada {
+    font-size: 10rem;
+    line-height: 8rem;
+    margin: 7rem 0 3rem 0; }
+  .regresaHome {
+    margin-top: 0.25rem; } }
+
+@media only screen and (max-width: 500px) {
+  .paginaNoEncontrada {
+    font-size: 4rem;
+    line-height: 5rem;
+    margin: 5rem 0 3rem 0; }
+  .regresaHome {
+    letter-spacing: 0.25rem; } }
 
 @media only screen and (max-width: 375px) {
   .tituloSeccion {
@@ -614,7 +656,7 @@ footer {
     line-height: 6rem; }
   .aboutDetalle, .aboutEmpleados {
     font-size: 1.5rem;
-    line-height: 2rem; }
+    line-height: 2.5rem; }
   .aboutEmpleados {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -627,7 +669,7 @@ footer {
   .aboutConcepto {
     font-size: 5rem;
     font-weight: 600;
-    line-height: 5rem;
+    line-height: 7rem;
     padding: 3rem 0; } }
 
 .contenedorFormulario {
