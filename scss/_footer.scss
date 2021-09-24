@@ -44,14 +44,3 @@ footer {
     }    
 }
 
-@media only screen and (max-width: 425px) {
-    
-    .menuFooter{
-
-        &__lista{
-            flex-direction: column;
-        }
-    }
-}
-
-
