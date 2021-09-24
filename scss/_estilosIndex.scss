@@ -123,13 +123,24 @@
         font-size: 18rem;
         line-height: 18rem;
         }
+        
+        
+        .letra__T:hover {
+            transition: all 3s;
+            transform: rotateZ(3060deg) scale(0.5);
+            
+            color: $GrisOscuro;
+
+        }
 
         &__bajada {
             margin-top: 0.25rem;
             letter-spacing: 0.30rem;
-        } 
+        }  
       
     }
+
+    
 
 }
 
