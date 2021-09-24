@@ -127,15 +127,15 @@
         
         .letra__T:hover {
             transition: all 3s;
-            transform: rotateZ(3060deg) scale(0.5);
+            transform: rotateZ(3780deg) scale(0.5);
             
             color: $GrisOscuro;
-
+ 
         }
 
         &__bajada {
             margin-top: 0.25rem;
-            letter-spacing: 0.30rem;
+            letter-spacing: 0.30rem; 
         }  
       
     }
