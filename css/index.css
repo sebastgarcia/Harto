@@ -395,7 +395,7 @@ footer {
     margin-top: 10rem;
     font-size: 50rem;
     font-weight: 400;
-    font-family: 'Staatliches', 'Montserrat', 'Roboto', Helvetica, Arial, sans-serif;
+    font-family: "Staatliches", "Montserrat", "Roboto", Helvetica, Arial, sans-serif;
     line-height: 45rem;
     display: inline-flex;
     justify-content: center; }
@@ -423,7 +423,6 @@ footer {
     color: #000;
     margin-top: 0.5rem;
     font-weight: 400;
-    font-family: 'Palanquin', 'Montserrat', 'Roboto', Helvetica, Arial, sans-serif;
     letter-spacing: 0.75rem;
     text-align: center;
     font-size: 1.5rem; }
