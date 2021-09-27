@@ -411,7 +411,7 @@ footer {
       transform: rotateZ(90deg) scale(0.7);
       color: #2D2C2C; }
     .marca__titulo .letra__R:hover {
-      transform: rotateX(790deg);
+      transform: rotateX(80deg);
       color: #2D2C2C; }
     .marca__titulo .letra__T:hover {
       transform: rotateZ(540deg) scale(0.5);
