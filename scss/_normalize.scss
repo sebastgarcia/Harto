@@ -96,6 +96,17 @@ a:hover {
             line-height: 3rem;
             letter-spacing: 0.25rem;
         }
+
+        a{
+            color: $GrisOscuro !important;
+
+            &:hover {
+                color: $Rojo !important;
+            }
+
+        }
+        
+
     }
 
     &__tags{

@@ -75,6 +75,10 @@ a:hover {
       font-size: 3rem;
       line-height: 3rem;
       letter-spacing: 0.25rem; }
+    .tituloProyecto__descripcion a {
+      color: #2D2C2C !important; }
+      .tituloProyecto__descripcion a:hover {
+        color: tomato !important; }
   .tituloProyecto__tags {
     font-size: 1.5rem;
     text-align: left;
